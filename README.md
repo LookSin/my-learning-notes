@@ -2,7 +2,7 @@
 
 自己日常学习的一些记录以及练习使用Git提交代码
 
-我的邮箱houbingzhi123@gmail.com
+我的邮箱houbingzhi123@gmail.com,欢迎一起交流学习
 
 #主要参考资料
 
