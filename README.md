@@ -12,12 +12,12 @@
 
 ## C语言
 
-   *https://www.icourse163.org/course/ZJU-9001?from=searchPage&outVendor=zw_mooc_pcssjg_
+   * https://www.icourse163.org/course/ZJU-9001?from=searchPage&outVendor=zw_mooc_pcssjg_
  
-   *https://gitee.com/yongloveru/c_practice/blob/master/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E8%A8%80.md
+   * https://gitee.com/yongloveru/c_practice/blob/master/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E8%A8%80.md
  
 ## 数据结构
 
-   *https://www.icourse163.org/course/ZJU-93001
+   * https://www.icourse163.org/course/ZJU-93001
  
-   *https://www.lookcos.cn/archives/1190.html
+   * https://www.lookcos.cn/archives/1190.html
