@@ -231,3 +231,46 @@ WHERE last_name LIKE '%a%' AND last_name LIKE '%k%';
 #选择姓名中有字母a和k的员工姓名
 ```
 
+# 3.排序与分页
+
+## 3.1 ORDER BY实现排序操作
+
+- 升序：ASC(ascend)
+- 降序：DESC(descend)
+
+```mysql
+SELECT employee_id,last_name,salary
+FROM employees
+ORDER BY salary DESC;
+#按照salary从高到低的顺序显示员工信息
+```
+
+如果在ORDER BY后没有显示指明排序的方式的话，则默认按照升序排列。
+
+```mysql
+SELECT employee_id,salary,salary * 12 annual_sal
+FROM employees
+ORDER BY annual_sal;
+#我们可以使用列的别名，进行排序
+#列的别名只能在ORDER BY中使用，不能在WHERE中使用
+```
+
+强调格式：WHERE需要声明在FROM后，ORDER BY之前。
+
+```mysql
+SELECT employee_id,salary
+FROM employees
+WHERE department_id IN (50,60,70)
+ORDER BY department_id DESC;
+```
+
+**二级排序**
+
+```mysql
+SELECT employee_id,salary,department_id
+FROM employees
+ORDER BY department_id DESC,salary ASC;
+#显示员工信息，按照department_id的降序排列，salary的升序排列
+```
+
+## 3.2 LIMIT实现分页操作
