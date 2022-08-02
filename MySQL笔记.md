@@ -274,3 +274,52 @@ ORDER BY department_id DESC,salary ASC;
 ```
 
 ## 3.2 LIMIT实现分页操作
+
+```mysql
+SELECT employee_id,last_name
+FROM employees
+LIMIT 0,20
+#每页显示20条记录，偏移量为0，此时显示第一页
+
+SELECT employee_id,last_name
+FROM employees
+LIMIT 20,20
+#每页显示20条记录，此时显示第二页
+```
+
+WHERE...ORDER BY...LIMIT声明顺序如下
+
+```mysql
+SELECT employee_id,last_name,salary
+FROM employees
+WHERE salary > 6000
+ORDER BY salary DESC
+LIMIT 0,10;
+```
+
+## 3.3 练习
+
+```mysql
+SELECT last_name,department_id,salary * 12 annual_salary
+FROM employees
+ORDER BY annual_salary DESC,last_name ASC;
+#查询员工的姓名，部门号和年薪，按年薪降序，按姓名升序显示
+```
+
+```mysql
+SELECT last_name,salary 
+FROM employees
+WHERE salary NOT BETWEEN 8000 AND 17000
+ORDER BY salary DESC
+LIMIT 20,20;
+#选择工资不在 8000到 17000的员工的姓名和工资，按工资降序，显示第21到40位置的数据
+```
+
+```mysql
+SELECT employee_id,last_name,department_id
+FROM employees
+WHERE email LIKE '%e%'
+ORDER BY LENGTH(email) DESC,department_id;
+#查询邮箱中包含e的员工信息，并先按邮箱的字节数排序，再按部门号升序
+```
+
