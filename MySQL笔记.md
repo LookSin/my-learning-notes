@@ -323,3 +323,31 @@ ORDER BY LENGTH(email) DESC,department_id;
 #查询邮箱中包含e的员工信息，并先按邮箱的字节数排序，再按部门号升序
 ```
 
+# 4.多表查询
+
+```mysql
+#多表查询的正确方式:需要有连接条件
+SELECT employee_id,department_name
+FROM employees,departments
+WHERE employees.department_id = departments.department_id;
+#两个表的连接条件
+```
+
+```mysql
+#如果查询语句中出现了多个表中都存在的字段，则必须指明此字段所在的表
+SELECT employees.employee_id,departments.department_name,employees.`department_id`
+FROM employees,departments
+WHERE employees.department_id = departments.department_id;
+#建议:从sql优化的角度，建议多表查询时，每个字段前都指明其所在的表
+```
+
+```mysql
+#可以给表起别名,在SELECT和WHERE中使用表的别名
+SELECT emp.employee_id,dept.department_name,emp.`department_id`
+FROM employees emp,departments dept
+WHERE emp.department_id = dept.department_id;
+```
+
+**如果给表起了别名，一旦在SELECT和WHERE中使用别名的话，则必须使用表的别名，而不能再使用表的原名。**
+
+如果有n个表实现多表的查询，则至少需要n-1个连接条件。
