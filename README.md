@@ -1,4 +1,4 @@
-[个人邮箱.txt](https://github.com/LookSin/my-learning-notes/files/9555414/default.txt)
+(https://github.com/LookSin/my-learning-notes/files/9555414/default.txt)
 ![LookSin's GitHub stats](https://github-readme-stats.vercel.app/api?username=LookSin&show_icons=true)
 
 <img src="https://img.shields.io/badge/gitHub-%E8%AE%A9%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD-brightgreen" />
