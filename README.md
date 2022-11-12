@@ -2,10 +2,10 @@
 
 <img src="https://img.shields.io/badge/gitHub-%E8%AE%A9%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD-brightgreen" />
 
-# MySQL和数据结构(C语言)学习笔记
+# MySQL、数据结构(C语言)、华为ICT大赛学习笔记
 
    * 自己日常学习的一些记录  
-   * MySQL笔记不定期更新中  
+   * 目前在备考华为ICT云赛道 
   
 
 
@@ -26,3 +26,8 @@
 ## 数据库
 
    * https://www.bilibili.com/video/BV1iq4y1u7vj?p=33&vd_source=c5083875acddfd696debc61fc619a69f
+   
+## 华为ICT大赛
+   * https://ilearningx.huawei.com/courses/course-v1:HuaweiX+EBGTD9027+Self-paced/courseware/6d1849be054c434e946f1fa21391b792/01172657f7284477b090fd613e791f46/
+   
+   * https://docs.qq.com/pdf/DSWpPV0ZCdElIZUJo?
